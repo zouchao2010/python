@@ -21,7 +21,7 @@ RUN pip install tornado \
     && pip install eventlet \
     && pip install bcrypt \
     && pip install requests \
-    && pip install momoko==1.1.5 \
+    && pip install momoko \
     && pip install Pillow \
 
     && rm -rf /tmp/pip-*

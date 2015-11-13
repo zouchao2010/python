@@ -1,28 +1,28 @@
 FROM python:2.7
 
 RUN apt-get update \
-    && apt-get install -y wget unzip \
+    && apt-get install -y wget unzip libjpeg8-dev \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install tornado \
-    && pip install thriftpy \
-    && pip install toro \
-    && pip install twilio \
-    && pip install docopt \
-    && pip install protobuf \
-    && pip install sockjs-tornado \
-    && pip install redis \
-    && pip install tornado-redis \
-    && pip install motor \
-    && pip install PyJWT \
-    && pip install eventlet \
-    && pip install bcrypt \
-    && pip install requests \
-    && pip install momoko \
-    && pip install Pillow \
+RUN pip install tornado --upgrade \
+    && pip install thriftpy --upgrade \
+    && pip install toro --upgrade \
+    && pip install twilio --upgrade \
+    && pip install docopt --upgrade \
+    && pip install protobuf --upgrade \
+    && pip install sockjs-tornado --upgrade \
+    && pip install redis --upgrade \
+    && pip install tornado-redis --upgrade \
+    && pip install motor --upgrade \
+    && pip install PyJWT --upgrade \
+    && pip install eventlet --upgrade \
+    && pip install bcrypt --upgrade \
+    && pip install requests --upgrade \
+    && pip install momoko --upgrade \
+    && pip install Pillow --upgrade \
 
     && rm -rf /tmp/pip-*
 

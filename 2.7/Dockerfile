@@ -7,7 +7,7 @@ RUN apt-get update \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install tornado --upgrade \
+RUN pip install tornado==4.2 \
     && pip install thriftpy --upgrade \
     && pip install toro --upgrade \
     && pip install twilio --upgrade \

@@ -23,6 +23,7 @@ RUN pip install tornado==4.2 \
     && pip install requests --upgrade \
     && pip install momoko --upgrade \
     && pip install Pillow --upgrade \
+    && pip install python-dateutil --upgrade \
 
     && rm -rf /tmp/pip-*
 

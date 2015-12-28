@@ -23,6 +23,7 @@ RUN pip install tornado \
     && pip install requests \
     && pip install momoko \
     && pip install Pillow \
+    && pip install python-dateutil \
 
     && rm -rf /tmp/pip-*
 

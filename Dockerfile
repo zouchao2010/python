@@ -1,7 +1,7 @@
 FROM python:2.7
 
 RUN apt-get update \
-    && apt-get install -y wget unzip \
+    && apt-get install -y wget unzip libjpeg-dev \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && apt-get autoclean -y \

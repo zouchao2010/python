@@ -24,6 +24,7 @@ RUN pip install tornado \
     && pip install momoko \
     && pip install Pillow \
     && pip install python-dateutil \
+    && pip install asyncmc --upgrade \
 
     && rm -rf /tmp/pip-*
 

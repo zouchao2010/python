@@ -26,6 +26,7 @@ RUN pip install tornado --upgrade \
     && pip install python-dateutil --upgrade \
     && pip install asyncmc --upgrade \
     && pip install psutil --upgrade \
+    && pip install phonenumbers --upgrade \
 
     && rm -rf /tmp/pip-*
 

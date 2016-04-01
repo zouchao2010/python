@@ -27,6 +27,7 @@ RUN pip install tornado --upgrade \
     && pip install asyncmc --upgrade \
     && pip install psutil --upgrade \
     && pip install phonenumbers --upgrade \
+    && pip install pyconvert --upgrade \
 
     && rm -rf /tmp/pip-*
 

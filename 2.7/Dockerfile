@@ -1,13 +1,15 @@
 FROM python:2.7
 
 RUN apt-get update \
-    && apt-get install -y wget unzip libjpeg-dev \
+    && apt-get install -y wget vim tmux unzip gcc libjpeg-dev libffi-dev libpq-dev\
     && apt-get autoremove -y \
     && apt-get clean -y \
     && apt-get autoclean -y \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install tornado --upgrade \
+RUN pip install pip --upgrade \
+    && pip install setuptools --upgrade \
+    && pip install tornado --upgrade \
     && pip install thriftpy --upgrade \
     && pip install toro --upgrade \
     && pip install twilio --upgrade \
@@ -28,6 +30,10 @@ RUN pip install tornado --upgrade \
     && pip install psutil --upgrade \
     && pip install phonenumbers --upgrade \
     && pip install pyconvert --upgrade \
+    && pip install Tornado-MySQL --upgrade \
+    && pip install enum --upgrade \
+    && pip install hyper --upgrade \
+    && pip install bleach --upgrade \
 
     && rm -rf /tmp/pip-*
 

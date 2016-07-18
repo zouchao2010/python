@@ -41,7 +41,7 @@ RUN pip3.4 install pip --upgrade \
     && pip3.4 install config --upgrade \
     && pip3.4 install sqlautocode --upgrade \
     && pip3.4 install apscheduler --upgrade \
-    && pip3.4 install threadspool --upgrade \
+    && pip3.4 install threadpool --upgrade \
 
     && rm -rf /tmp/pip3.4-*
 
